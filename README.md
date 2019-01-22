@@ -41,11 +41,11 @@ The Excel macro will convert forward slashes to backslashes in the document path
 The Data tab in the preadsheet mentions search capability. This version does not have it.
 
 The site you create does not require a server. It runs directly off the file system. You do not need to be online. 
-So if you put this on a laptop and have no net connection, it will work just fine.
+So if you put this on a laptop and have no net connection, it will work just fine. Nor do you even need Excel on the machine you are running the viewer on. (Excel is out of the picture once you hit "Generate.")
 
-Things may change a bit in the display depending what viewers you have installed.
+Things may change a bit in the page display depending what viewers you have installed in your browser. It is not too picky about the browser either.
 
-Note that there is a lot of room in each item for a Summary. You can write an entire analysis and it will appear at the bottom of the left pane when you are viewing the document.
+Note that there is a lot of room in each item for a Summary. The examples here are short, but they can be much longer. You can write an entire analysis of each document, and it will appear at the bottom of the left pane when you are viewing the document. This is a major way we improve over the native file viewer in your File Manager. We can also be slective about which files we include in the index. Also, the date column gives you a place to put the *real* document date, rather than something picked up by the file system.
 
 Is this simple or what? Hope you like it.
 
