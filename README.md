@@ -23,7 +23,7 @@ That's it!
 
 Now for some information
 
-The Excel macro, generateData, spits out a Javascript file, gendata.js that captures all the index data. (The operative VBA macro is embedded in the Excel file; there is a file generateData.vba provided separately, but that is for doicumentation purposes. Editing the file generateData.vba will not do anything - you have to edit the macro within the Excel application.)
+The Excel macro, generateData, spits out a Javascript file, gendata.js that captures all the index data. (The operative VBA macro is embedded in the Excel file; there is a file generateData.vba provided separately, but that is for documentation purposes. Editing the file generateData.vba will not do anything - you have to edit the macro within the Excel application.)
 The file index.html reads in the Javascript from gendata.js and recreates the data structure of the Excel file in running Javascript, which index.html uses as a data source during run time (it does not access the Excel file itself).
 The file index.html also reads in some jQuery libraries to get some more UI capabilities to jazz up the presentation.
 Styling comes from the file igen.css. There are copies of the html and css in tabs of the spreadsheet, just for archival purposes (these tabs don't actually do anything). The file gendata.js is generated (from the Excel) and specific to each project. 
