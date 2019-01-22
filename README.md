@@ -10,7 +10,7 @@ You will see a sample binder with 30+ documents on "valves" of various types.
 To adapt this to your own content, replace the contents of the IMAGES folder with your own document collection.
 Then capture a directory of the documents:
 
-In Windows, C:\BINDER\IMAGES\> DIR /B /S *.* > listing.txt
+In Windows, C:\BINDER\IMAGES\> DIR /B /S \*.\* > listing.txt
 
  ... and paste the results into the Full Path column (F).
  
