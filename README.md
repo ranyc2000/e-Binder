@@ -1,5 +1,5 @@
 # e-Binder
-Automated document binder
+Dead simple automated document binder
 
 This project creates a web page that serves as an electronic binder for a document collection.
 
