@@ -12,7 +12,7 @@ Then capture a directory of the documents:
 
 In Windows Command shell (Win-R CMD), C:\BINDER\IMAGES\> DIR /B /S \*.\* > listing.txt
 
- ... and paste the results into the Full Path column (F) of the spreadsheet (replacing what was there).
+ ... and paste the results into the Full Path column (F) of the spreadsheet (replacing what was there). If you have global edits (say you want to enter a path prefix to each line, or the like) it is easier to paste the listing into your favorite editor (e.g., MS Word), make the edits and then copy and past into Col. F of the spreadsheet (and you can then discard the editor file).
  
 Fill in the other columns Date, Doc Type, Title, Summary, as desired. For starters you can just reuse the file spec data (Col. F) for both the Title and the Summary and revise later.
 
