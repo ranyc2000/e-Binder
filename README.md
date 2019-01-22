@@ -33,7 +33,7 @@ After you hit "Generate" you never have to touch gendata.js, the css file, the E
 All that has to change to make a new project are the Documents and Data tabs of the Excel, and your actual document collection.
 
 You can put the IMAGES folder whereever you want and name it whatever you want - so long as Col. F has the proper paths to your files.
-You can use unlimited nested directories for your documents, again, so long as the paths in Col. F reflect them.
+(../ goes up a folder level, etc., and you should be able to rech any file in your file system.) You can also use unlimited nested directories for your documents (even unrelated directories), again, so long as the paths in Col. F reflect the paths to each document.
 This works on both Windows and Mac.
 
 The Excel macro will convert forward slashes to backslashes in the document path for use in Windows. Mac doesn't care.
