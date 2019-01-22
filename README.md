@@ -10,27 +10,27 @@ You will see a sample binder with 30+ documents on "valves" of various types.
 To adapt this to your own content, replace the contents of the IMAGES folder with your own document collection.
 Then capture a directory of the documents:
 
-In Windows, C:\BINDER\IMAGES\> DIR /B /S \*.\* > listing.txt
+In Windows Command shell (Win-R CMD), C:\BINDER\IMAGES\> DIR /B /S \*.\* > listing.txt
 
- ... and paste the results into the Full Path column (F).
+ ... and paste the results into the Full Path column (F) of the spreadsheet (replacing what was there).
  
-Fill in the other columns Date, Doc Type, Title, Summary, as desired. For starters you can just reuse the file spec data (Col. F) for the Title and Summary and revise later.
+Fill in the other columns Date, Doc Type, Title, Summary, as desired. For starters you can just reuse the file spec data (Col. F) for both the Title and the Summary and revise later.
 
 Go to the Data Tab and fill in the Binder Name, sOutDir-PC (or Mac) (which is the full path to your binder folder) and the number of items you want to display per page.
-Go back to the Documents tabe and Save. Then press Generate.
+Go back to the Documents tab and Save. Then press Generate.
 Then check your handiwork by launching index.html.
 That's it!
 
 Now for some information
 
 The Excel macro, generateData, spits out a Javascript file, gendata.js that captures all the index data.
-The file index.html reads in the Javascript from gendata.js and recreates the data structure of the Excel file in running Javascript.
-The file index.html also reads in some jQuery libraries to get some more UI capabilities.
-Styling comes from igen.css.
+The file index.html reads in the Javascript from gendata.js and recreates the data structure of the Excel file in running Javascript, which index.html uses as a data source during run time (it does not access the Excel file itself).
+The file index.html also reads in some jQuery libraries to get some more UI capabilities to jazz up the presentation.
+Styling comes from the file igen.css. There are copies of the html and css in tabs of the spreadsheet, just for archival purposes (these tabs don't actually do anything). The file gendata.js is generated (from the Excel) and specific to each project. 
 
-You never have to touch gendata.js, the css file, the Excel macro, or index.html - though you are invited to diddle!
+After you hit "Generate" you never have to touch gendata.js, the css file, the Excel macro, or index.html - though you are invited to diddle!
 
-All that has to change to make a new project are the Documents and Data tabs of the excel, and your actual document collection.
+All that has to change to make a new project are the Documents and Data tabs of the Excel, and your actual document collection.
 
 You can put the IMAGES folder whereever you want and name it whatever you want - so long as Col. F has the proper paths to your files.
 You can use unlimited nested directories for your documents, again, so long as the paths in Col. F reflect them.
@@ -46,5 +46,7 @@ So if you put this on a laptop and have no net connection, it will work just fin
 Things may change a bit in the display depending what viewers you have installed.
 
 Note that there is a lot of room in each item for a Summary. You can write an entire analysis and it will appear at the bottom of the left pane when you are viewing the document.
+
+Is this simple or what? Hope you like it.
 
 Comments and changes welcome!
