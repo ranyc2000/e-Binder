@@ -34,7 +34,7 @@ All that has to change to make a new project are the Documents and Data tabs of 
 
 You can put the IMAGES folder whereever you want and name it whatever you want - so long as Col. F has the proper paths to your files.
 (../ goes up a folder level, etc., and you should be able to rech any file in your file system.) You can also use unlimited nested directories for your documents (even unrelated directories), again, so long as the paths in Col. F reflect the paths to each document.
-This works on both Windows and Mac.
+This works on both Windows and Mac. You therefore have lots of latitude in how you lay out your data and these control files.
 
 The Excel macro will convert forward slashes to backslashes in the document path for use in Windows. Mac doesn't care.
 
