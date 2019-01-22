@@ -1,0 +1,114 @@
+/**
+	 *	Basic Layout Theme
+ */
+	.ui-layout-pane { /* all 'panes' */ 
+		border: 1px solid #BBB; 
+	} 
+	.ui-layout-pane-center { /* IFRAME pane */ 
+		padding: 0;
+		margin:  0;
+	} 
+	.ui-layout-pane-west { /* west pane */ 
+		padding: 0 5px; 
+		background-color: #DDE !important;
+		overflow: auto;
+	} 
+
+	.ui-layout-resizer { /* all 'resizer-bars' */ 
+		background: #DDD; 
+		} 
+		.ui-layout-resizer-open:hover { /* mouse-over */
+			background: #00D; 
+		}
+
+	.ui-layout-toggler { /* all 'toggler-buttons' */ 
+		background: #AAA; 
+		} 
+		.ui-layout-toggler-closed { /* closed toggler-button */ 
+			background: #CCC; 
+			border-bottom: 1px solid #BBB; 
+		} 
+		.ui-layout-toggler .content { /* toggler-text */ 
+			font: 14px bold Verdana, Verdana, Arial, Helvetica, sans-serif;
+		}
+		.ui-layout-toggler:hover { /* mouse-over */ 
+			background: #DCA; 
+			} 
+			.ui-layout-toggler:hover .content { /* mouse-over */ 
+				color: #009; 
+				}
+
+		/* masks are usually transparent - make them visible (must 'override' default) */
+		.ui-layout-mask {
+			background:	#C00 !important;
+			opacity:	.20 !important;
+			filter:		alpha(opacity=20) !important;
+		}
+
+
+	body {
+		background-color: black;
+		font-family: Geneva, Arial, Helvetica, sans-serif;
+	}
+
+	ul { /* basic menu styling */
+		margin:		1ex 0;
+		padding:	0;
+		list-style:	none;
+		position:	relative;
+	}
+	li {
+		padding: 0.15em 1em 0.3em 5px;
+	}
+	/* Header/logo Title */
+.header {
+    padding: .1px;
+    text-align: center;
+    background-color: #226;
+    color: white;
+}
+/* Styles for the Document table */
+table {
+    border-collapse: collapse;
+}
+a:visited {
+    color: blue;	
+}
+table, th, td {
+    border: 1px solid black;
+	color: #0044ff;
+	background-color: #f1f1f1
+}
+/* Style the navigation bar */
+.navbar {
+    display: flex;
+    background-color: #226;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddf;
+    color: black;
+}
+/*
+.container {    
+}
+*/
+.blockN {
+	float:left; 
+}
+
+.block {
+	float:right; 
+}
+.number {
+	width:3em;
+}
