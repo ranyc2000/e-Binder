@@ -28,6 +28,8 @@ The file index.html reads in the Javascript from gendata.js and recreates the da
 The file index.html also reads in some jQuery libraries to get some more UI capabilities to jazz up the presentation.
 Styling comes from the file igen.css. There are copies of the html and css in tabs of the spreadsheet, also for archival purposes (these tabs don't actually do anything). The file gendata.js is generated (from the Excel) and specific to each project. 
 
+(The following is not a big deal, but note that Escel carries forward sort of a "high water mark" for the data it has stored (Used Range), which can result in blank lines that Excel treats as part of the spreadsheet. If the document collecton you are cataloging has fewer items than the one you are replacing, you should prefereably reset the Used Range in the spreadsheet before you Generate. Hit Ctrl-End to find what Excel thinks is the last cell. Highlight all rows from the *real* last row of actual data, through the last row that Excel *sees*, and right-click-Delete those blank rows. Save and reopen and test again with Ctrl-End to make sure the empty rows are really gone.)
+
 After you hit "Generate" you never have to touch gendata.js, the css file, the Excel macro, or index.html - though you are invited to diddle!
 
 All that has to change to make a new project are the Documents and Data tabs of the Excel, and your actual document collection.
@@ -45,7 +47,7 @@ So if you put this on a laptop and have no net connection, it will work just fin
 
 Things may change a bit in the page display depending what viewers you have installed in your browser. It is not too picky about the browser either.
 
-Note that there is a lot of room in each item for a Summary. The examples here are short, but they can be much longer. You can write an entire analysis of each document, and it will appear at the bottom of the left pane when you are viewing the document. This is a major way we improve over the native file viewer in your File Manager. We can also be slective about which files we include in the index. Also, the date column gives you a place to put the *real* document date, rather than something picked up by the file system.
+Note that there is a lot of room in each item for a Summary. The examples here are short, but they can be much longer. You can write an entire analysis of each document, and it will appear at the bottom of the left pane when you are viewing the document. This is a major way we improve over the native file viewer in your File Manager. We can also be selective about which files we include in the index. Also, the date column gives you a place to put the *real* document date, rather than something picked up by the file system.
 
 You can use Excel before you Generate to sort the spreadsheet by date, to get a chronological listing. Undated docs will all sort at one end of the list, so you may want to put in approximate dates (even if that is something like Jan. 1 of some year) rather than leave them blank.
 
