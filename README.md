@@ -47,7 +47,7 @@ Things may change a bit in the page display depending what viewers you have inst
 
 Note that there is a lot of room in each item for a Summary. The examples here are short, but they can be much longer. You can write an entire analysis of each document, and it will appear at the bottom of the left pane when you are viewing the document. This is a major way we improve over the native file viewer in your File Manager. We can also be slective about which files we include in the index. Also, the date column gives you a place to put the *real* document date, rather than something picked up by the file system.
 
-You can use Excel before you Generate to sort the spreadsheet by date, to get a chronological listing. Undated docs will all sort at one end of the list, so you may want to put in approximate dates rather than leave them blank.
+You can use Excel before you Generate to sort the spreadsheet by date, to get a chronological listing. Undated docs will all sort at one end of the list, so you may want to put in approximate dates (even if that is something like Jan. 1 of some year) rather than leave them blank.
 
 Is this simple or what? Hope you like it.
 
