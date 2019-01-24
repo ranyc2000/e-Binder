@@ -23,14 +23,14 @@ That's it!
 
 Now for some information
 
-The Excel macro, generateData, spits out a Javascript file, gendata.js that captures all the index data. (The operative VBA macro is embedded in the Excel file; there is a file generateData.vba provided separately, but that is for documentation purposes. Editing the file generateData.vba will not do anything - you have to edit the macro within the Excel application.)
-The file index.html reads in the Javascript from gendata.js and recreates the data structure of the Excel file in running Javascript, which index.html uses as a data source during run time (it does not access the Excel file itself).
-The file index.html also reads in some jQuery libraries to get some more UI capabilities to jazz up the presentation.
+This is a tiny templated system. The user need not edit any HTML, Javascript or Visual Basic to deploy a new binder. All that needs to be added or edited is the data itself, for the index. It requires a web browser and a place to put the content and control files, which can be a local or remote file system without even requiring a web server (though it will also work under a web server).
+
+The data is entered in Excel. An Excel macro, generateData, spits out a Javascript file, gendata.js that captures all the index data. (The operative VBA macro is embedded in the Excel file; the separate file generateData.vba is provided for documentation purposes, to make it easier to see this code, if you are interested.)
+
+The provided file index.html reads in the Javascript from gendata.js and recreates the data structure of the Excel file in running Javascript. index.html uses the loaded contents of gendata.js as a data source during run time (it does not access the Excel file itself). index.html also reads in some jQuery libraries to get some more UI capabilities to jazz up the presentation.
 Styling comes from the file igen.css. There are copies of the html and css in tabs of the spreadsheet, also for archival purposes (these tabs don't actually do anything). The file gendata.js is generated (from the Excel) and specific to each project. 
 
-(The following is not a big deal, but note that Excel carries forward sort of a "high water mark" for the data it has stored (Used Range), which can result in blank lines that Excel treats as part of the spreadsheet. If the document collecton you are cataloging has fewer items than the one you are replacing, you should prefereably reset the Used Range in the spreadsheet before you Generate. Hit Ctrl-End to find what Excel thinks is the last cell. Highlight all rows from the *real* last row of actual data, through the last row that Excel *sees*, and right-click-Delete those blank rows. Save and reopen and test again with Ctrl-End to make sure the empty rows are really gone.)
-
-After you hit "Generate" you never have to touch gendata.js, the css file, the Excel macro, or index.html - though you are invited to diddle!
+You never need to edit index.html, igen.css, the Excel macro, or anything else, other than the data in the Excel file.
 
 All that has to change to make a new project are the Documents and Data tabs of the Excel, and your actual document collection.
 
@@ -53,6 +53,8 @@ You can use Excel before you Generate to sort the spreadsheet by date, to get a 
 
 The VBA commands in the Excel macro work on both PC and Mac - you can use Office on the PC or the Mac - either will work.
 
+(The following is not a big deal, but note that Excel carries forward sort of a "high water mark" for the data it has stored (Used Range), which can result in blank lines that Excel treats as part of the spreadsheet. If the document collecton you are cataloging has fewer items than the one you are replacing, you should prefereably reset the Used Range in the spreadsheet before you Generate. Hit Ctrl-End to find what Excel thinks is the last cell. Highlight all rows from the *real* last row of actual data, through the last row that Excel *sees*, and right-click-Delete those blank rows. Save and reopen and test again with Ctrl-End to make sure the empty rows are really gone.)
+
 Is this simple or what? Hope you like it.
 
-Comments and changes welcome!
+Comments and enhancements welcome!
