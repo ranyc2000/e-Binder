@@ -27,7 +27,7 @@ This is a tiny templated system. The user need not edit any HTML, Javascript or 
 
 The data is entered in Excel. An Excel macro, generateData, spits out a Javascript file, gendata.js that captures all the index data. (The operative VBA macro is embedded in the Excel file; the separate file generateData.vba is provided for documentation purposes, to make it easier to see this code, if you are interested.)
 
-The provided file index.html reads in the Javascript from gendata.js and recreates the data structure of the Excel file in running Javascript. index.html uses the loaded contents of gendata.js as a data source during run time (it does not access the Excel file itself). index.html also reads in some jQuery libraries to get some more UI capabilities to jazz up the presentation.
+The provided file index.html reads in the Javascript from gendata.js and recreates the data structure of the Excel file in running Javascript. index.html uses the loaded contents of gendata.js as a data source during run time (it does not actually need runtime access to the Excel file itself). index.html also reads in some jQuery libraries to get some more UI capabilities to jazz up the presentation.
 Styling comes from the file igen.css. There are copies of the html and css in tabs of the spreadsheet, also for archival purposes (these tabs don't actually do anything). The file gendata.js is generated (from the Excel) and specific to each project. 
 
 You never need to edit index.html, igen.css, the Excel macro, or anything else, other than the data in the Excel file.
