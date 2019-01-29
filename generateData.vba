@@ -9,7 +9,6 @@ Dim sFileLocation, sFileURL, sOutfile, sLink, sJLink, sJTitle, sTitle, initialSo
 Dim nRowsPerPage As Integer
 Dim lLastRow As Long
 sFileURL = "."
-'sOutfile = "gendata.js"
 sOutfile = Application.ActiveWorkbook.Path & "/" & "gendata.js"
 #If Mac Then
   'sOutfile = Range("Data!B8") & "/" & "gendata.js"
@@ -29,8 +28,10 @@ initialSource = Replace(Range("Documents!F2"), "\", "\\")
 Open sOutfile For Output As #1
 
 '===========================================================================================================================
+
+' EMIT PARAMETERS AND TABLE DATA AS JAVASCRIPT TO gendata.js
+
 '===========================================================================================================================
-'BEGIN JAVASCRIPT
 Print #1, "maxRows=" & lLastRow - 1 & ";"
 Print #1, "var jRowsPerPage=" & nRowsPerPage & "+1;"
 Print #1, "jTitle=""" & sTitle & """;"
@@ -41,14 +42,14 @@ Print #1, "jInitialSrc=""" & initialSource & """;"
 Print #1, "var items = [];"
 Print #1, "var row;"
 For i = 2 To lLastRow - 1
-  Print #1, "row = {Id:'" & i & "',Date:'" & Range("A" & i) & "',Score:'" & Range("B" & i) & "',Title:'" & clean(Range("C" & i)) & "',DocType:'" & Range("D" & i) & _
-    "',Summary:'" & clean(Range("E" & i)) & "',Path:'" & clean(Range("F" & i)) & "'};"
+  Print #1, "row = {Id:'" & i & "',Date:'" & Range("A" & i) & "',Score:'" & Range("B" & i) & "',Title:'" & clean(Range("C" & i)) & _
+    "',DocType:'" & Range("D" & i) & "',Summary:'" & clean(Range("E" & i)) & "',Path:'" & clean(Range("F" & i)) & "'};"
   Print #1, "items.push(row);"
 Next i
 
-'Print #1, "alert(items[2].Path)")
 Close #1
 
 MsgBox ("Binder Index data file named " & sOutfile & " has been generated.")
 
 End Sub
+
